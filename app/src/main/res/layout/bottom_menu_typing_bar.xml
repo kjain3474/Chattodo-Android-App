@@ -1,0 +1,202 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="@dimen/cornerRadius"
+    card_view:cardElevation="@dimen/card_elevation"
+    card_view:cardBackgroundColor="@color/brownishOrange"
+    android:layout_marginRight="@dimen/connections_horizontal_margin"
+    android:layout_marginLeft="@dimen/connections_horizontal_margin"
+    android:layout_marginTop="@dimen/connections_vertical_spacing"
+    android:layout_marginBottom="@dimen/connections_vertical_spacing"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconBar"
+        android:gravity="center"
+        android:padding="@dimen/button_bar_padding"
+        android:background="@drawable/upper_corners_round_dusty_orange"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more"
+            android:backgroundTint="@color/milkChocolate"
+            android:id="@+id/moreButton"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera"
+            android:backgroundTint="@color/milkChocolate"
+            android:id="@+id/photoButton"
+            android:layout_toRightOf="@+id/moreButton"
+            android:layout_marginLeft="@dimen/buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/milkChocolate"
+            android:background="@drawable/add_new"
+            android:id="@+id/notesButton"
+            android:layout_toRightOf="@+id/photoButton"
+            android:layout_marginLeft="@dimen/buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tasks"
+            android:id="@+id/tasksButton"
+            android:layout_toRightOf="@+id/notesButton"
+            android:layout_marginLeft="@dimen/buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            android:backgroundTint="@color/milkChocolate"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voice"
+            android:id="@+id/voiceButton"
+            android:layout_toRightOf="@+id/tasksButton"
+            android:layout_marginLeft="@dimen/buttons_horizontal_margin"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            android:backgroundTint="@color/milkChocolate"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/voiceBar"
+        android:paddingTop="@dimen/button_bar_padding"
+        android:paddingBottom="@dimen/button_bar_padding"
+        android:background="@drawable/upper_corners_round_dusty_orange"
+        android:visibility="visible"
+        >
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voice"
+            android:id="@+id/voiceIcon"
+            android:layout_marginRight="@dimen/connections_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            android:backgroundTint="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/voiceTimeView"
+            android:layout_marginLeft="@dimen/connections_horizontal_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/connections_vertical_spacing"
+            android:textColor="@color/white"
+            android:text="2:30/2:40"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/connection_title"
+            android:layout_below="@+id/mentionsBar"
+            android:padding="@dimen/button_bar_padding"
+            android:background="@color/transparent"
+            android:id="@+id/typingText"
+            android:maxHeight="100dp"
+            android:layout_toLeftOf="@+id/sendMessage"
+            />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sendMessage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/typingText"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:src="@drawable/send" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconBar"
+            android:id="@+id/mentionsBar"
+            android:background="@color/dustyOrange"
+            android:paddingLeft="@dimen/button_bar_padding"
+            android:paddingRight="@dimen/button_bar_padding"
+            android:paddingBottom="@dimen/button_bar_padding"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/chat_message_text"
+                android:text="Shared with"
+                android:textStyle="bold"
+                android:textColor="@color/milkChocolate"
+
+                android:id="@+id/sharedLabel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mentions"
+                android:textSize="@dimen/mention_bar_hint_size"
+                android:hint="Type @ username to share it as a task"
+                android:layout_below="@+id/sharedLabel"
+                android:textColorHint="@color/brownishOrange"
+                android:paddingTop="@dimen/mentions_bar_item_padding"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/chat_message_text"
+                android:text="Collections"
+                android:layout_below="@+id/mentions"
+                android:textStyle="bold"
+                android:id="@+id/collLabel"
+                android:layout_marginTop="@dimen/mentions_vertical_spacing"
+                android:textColor="@color/milkChocolate"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mention_bar_hint_size"
+                android:hint="# Add #tag collection tags"
+                android:paddingTop="@dimen/mentions_bar_item_padding"
+                android:layout_below="@+id/collLabel"
+                android:textColor="@color/white"
+                android:textColorHint="@color/brownishOrange"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

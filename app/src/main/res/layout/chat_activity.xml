@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/chat_activity_header"
+        android:id="@+id/chatHeader"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_height"
+        android:id="@+id/chatHeaderSeparator"
+        android:layout_below="@id/chatHeader"
+        android:layout_marginTop="@dimen/connections_vertical_spacing"
+        android:layout_marginBottom="@dimen/connections_vertical_spacing"
+        android:background="@color/whiteThree"
+        />
+
+    <include layout="@layout/new_message_recieved"
+        android:id="@+id/messageR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatHeaderSeparator"
+        />
+
+    <include layout="@layout/new_message_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageR"
+        android:id="@+id/messageS"/>
+
+    <include layout="@layout/bottom_menu_typing_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/connections_horizontal_margin"
+        android:layout_marginRight="@dimen/connections_horizontal_margin"
+        android:layout_marginBottom="@dimen/connections_vertical_spacing"/>
+</RelativeLayout>

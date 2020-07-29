@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/connections_horizontal_margin"
+    android:layout_marginLeft="@dimen/connections_horizontal_margin"
+    android:layout_marginTop="@dimen/connections_vertical_spacing"
+    android:layout_marginBottom="@dimen/connections_vertical_spacing"
+    android:background="@drawable/round_corners_greyishbrown"
+    android:padding="@dimen/new_message_padding"
+    android:textColor="@color/whiteTwo"
+    android:textSize="@dimen/connection_message_text"
+    android:text="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries , but also the ..."
+    xmlns:android="http://schemas.android.com/apk/res/android" />

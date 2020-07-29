@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Default screen margins, per the Android Design guidelines. -->
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+        <dimen name="activity_vertical_margin">16dp</dimen>
+        <dimen name="connection_title">17dp</dimen>
+        <dimen name="connections_vertical_spacing">10dp</dimen>
+        <dimen name="connections_horizontal_margin">18dp</dimen>
+        <dimen name="profile_icon_height">40dp</dimen>
+        <dimen name="profile_icon_width">40dp</dimen>
+        <dimen name="connection_item_padding">15dp</dimen>
+        <dimen name="connection_between_item_spacing">10dp</dimen>
+        <dimen name="connection_handle_text">12dp</dimen>
+        <dimen name="connection_time_text">12dp</dimen>
+        <dimen name="connection_handle_padding">2dp</dimen>
+        <dimen name="connection_message_text">14dp</dimen>
+        <dimen name="connection_between_item_spacing_vertical">8dp</dimen>
+        <dimen name="cornerRadius">8dp</dimen>
+        <dimen name="time_text_padding">3dp</dimen>
+        <dimen name="header_vertical_margin">22dp</dimen>
+        <dimen name="heading_text_size">21dp</dimen>
+    <dimen name="add_horizontal_margin">30dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="icon_bar_vertical_margin">58dp</dimen>
+    <dimen name="buttons_horizontal_margin">40dp</dimen>
+    <dimen name="button_bar_padding">15dp</dimen>
+    <dimen name="new_message_padding">12dp</dimen>
+    <dimen name="chat_message_margin">65dp</dimen>
+    <dimen name="chat_heading_text_size">22dp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="todoButtonDimen">20dp</dimen>
+    <dimen name="todo_button_margin_horizontal">27dp</dimen>
+    <dimen name="chat_message_text">14dp</dimen>
+<dimen name="feed_tag_padding">5dp</dimen>
+    <dimen name="feed_corner_radius">2dp</dimen>
+    <dimen name="fab_margin">10dp</dimen>
+    <dimen name="mentions_bar_item_padding">8dp</dimen>
+    <dimen name="mentions_vertical_spacing">16dp</dimen>
+    <dimen name="mention_bar_hint_size">12dp</dimen>
+</resources>
